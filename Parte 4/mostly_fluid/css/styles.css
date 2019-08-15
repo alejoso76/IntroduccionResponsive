@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, helvetica;
+}
+
+div.contenido-superior {
+  padding: 20px;
+}
+
+div.contenido-inferior > div {
+  padding:20px;
+}
+
+@media only screen and (min-width:768px) {
+  /*>: Selector primer hijo*/
+  /*?elemento1 > elemento2
+  Selecciona todos los elementos2 en los que su padre es un elemento1
+  */
+  div.contenido-inferior > div {
+    width: 50%;
+    float: left;
+  }
+
+  div.contenedor {
+    /*Si esta en una pantalla grande no se va a las puntas*/
+    max-width: 1100px;
+    margin:0 auto;
+  }
+}
