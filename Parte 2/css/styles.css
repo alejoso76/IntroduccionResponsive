@@ -29,7 +29,9 @@ div.caja div.contenido {
   background-color: yellow;
   padding: 20px;
 }
-
+/*Con max-width es desktop first*/
+/*!Desktop-first puede ser mas complejo*/
+/**Desktop-first se orienta a cuando ya existe un sitio de escritorio desarrollado*/
 @media only screen and (max-width:800px) {
   body {
     background-color: purple;
